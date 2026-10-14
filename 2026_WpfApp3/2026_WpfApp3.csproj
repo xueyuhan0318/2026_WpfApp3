@@ -12,6 +12,7 @@
   <ItemGroup>
     <None Remove="ellipse.png" />
     <None Remove="line.png" />
+    <None Remove="polyline.png" />
     <None Remove="rectangle.png" />
   </ItemGroup>
 
@@ -26,6 +27,7 @@
     <Resource Include="line.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="polyline.png" />
     <Resource Include="rectangle.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
