@@ -30,7 +30,7 @@ namespace _2026_WpfApp3
         private void ShapeButton_Checked(object sender, RoutedEventArgs e)
         {
             var targetShapeButton = sender as RadioButton;
-            ShapeType = targetShapeButton.Content.ToString();
+            ShapeType = targetShapeButton.Tag.ToString();
             DisplayStutas();
         }
 
@@ -42,8 +42,8 @@ namespace _2026_WpfApp3
 
         private void DisplayStutas()
         {
-            if (ColorLabel != null) ColorLabel.Content = $"筆刷色彩:{strokerColor}      填充色彩:{fillColor}      筆刷粗細:{strokeThickness}"; 
-            if (ShapeLabel != null) ShapeLabel.Content = $"形狀:{ShapeType}";
+            if (ColorLabel != null) ColorLabel.Content = $"筆刷色彩: {strokerColor}      填充色彩: {fillColor}      筆刷粗細: {strokeThickness}"; 
+            if (ShapeLabel != null) ShapeLabel.Content = $"形狀: {ShapeType}";
         }
 
         private void FillColorPicker_SelectedColorChanged(object sender, RoutedPropertyChangedEventArgs<Color?> e)

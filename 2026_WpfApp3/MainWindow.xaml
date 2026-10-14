@@ -24,16 +24,16 @@
                 <Label FontSize="14" FontWeight="Bold" Margin="30,0,0,0" Content="{Binding Value, ElementName=ThicknessSlider}" Foreground="#FFED1111" VerticalAlignment="Center" HorizontalAlignment="Center"/>
             </ToolBar>
             <ToolBar Height="38" Width="600" Background="#FFA8D684">
-                <RadioButton Height="35" Width="35" Checked="ShapeButton_Checked" FontSize="16" FontWeight="Bold" Tag="Line">
+                <RadioButton x:Name="Line" Height="35" Width="35" Checked="ShapeButton_Checked" FontSize="16" FontWeight="Bold" Tag="Line">
                     <Image Source="/line.png"></Image>
                 </RadioButton>
-                <RadioButton Height="35" Width="35" Checked="ShapeButton_Checked" FontSize="16" FontWeight="Bold" Tag="Rectangle">
+                <RadioButton x:Name="Rectangle" Height="35" Width="35" Checked="ShapeButton_Checked" FontSize="16" FontWeight="Bold" Tag="Rectangle">
                     <Image Source="/rectangle.png"></Image>
                 </RadioButton>
-                <RadioButton Height="35" Width="35" Checked="ShapeButton_Checked" FontSize="16" FontWeight="Bold" Tag="Ellipse">
+                <RadioButton x:Name="Ellipse" Height="35" Width="35" Checked="ShapeButton_Checked" FontSize="16" FontWeight="Bold" Tag="Ellipse">
                     <Image Source="/ellipse.png"></Image>
                 </RadioButton>
-                <RadioButton Height="35" Width="35" Checked="ShapeButton_Checked" FontSize="16" FontWeight="Bold" Tag="Polyline">
+                <RadioButton x:Name="Polyline" Height="35" Width="35" Checked="ShapeButton_Checked" FontSize="16" FontWeight="Bold" Tag="Polyline">
                     <Image Source="/polyline.png"></Image>
                 </RadioButton>
             </ToolBar>
