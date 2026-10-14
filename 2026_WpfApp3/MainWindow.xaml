@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:_2026_WpfApp3"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-    
-    </Grid>
+    <DockPanel>
+        <Menu Height="30" DockPanel.Dock="Top">
+            <MenuItem Header="檔案" Height="30" VerticalAlignment="Center" FontSize="16">
+                <MenuItem Header="開啟新畫布" VerticalAlignment="Center" FontSize="16"></MenuItem>
+                <MenuItem Header="儲存畫布" VerticalAlignment="Center" FontSize="16"></MenuItem>
+            </MenuItem> 
+        </Menu>
+        <ToolBarTray Height="40" Background="LightCyan" DockPanel.Dock="Top">
+        </ToolBarTray>
+        <StatusBar Height="35" Background="LightGray" DockPanel.Dock="Bottom">
+                
+        </StatusBar>
+        <Canvas Background="#FFF5f5E7"/>
+
+    </DockPanel>
 </Window>
