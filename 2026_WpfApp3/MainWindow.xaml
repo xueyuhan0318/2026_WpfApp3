@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:_2026_WpfApp3"
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="WPF小畫家ver1" Height="450" Width="800">
+        Title="WPF小畫家ver2" Height="450" Width="800">
     <DockPanel>
         <Menu Height="30" DockPanel.Dock="Top">
             <MenuItem Header="檔案" Height="30" VerticalAlignment="Center" FontSize="16">
@@ -36,6 +36,13 @@
                 <RadioButton x:Name="Polyline" Height="35" Width="35" Checked="ShapeButton_Checked" FontSize="16" FontWeight="Bold" Tag="Polyline">
                     <Image Source="/polyline.png"></Image>
                 </RadioButton>
+                <Separator/>
+                <Button x:Name="EraserButton" Width="35" Height="35" Tag="Eraser" Click="EraserButton_Click">
+                    <Image Source="/eraser.png" Cursor="Hand"/>
+                </Button>
+                <Button x:Name="ClearButton" Width="35" Height="35" Tag="Eraser" Click="ClearButton_Click">
+                    <Image Source="/trashcan.png"></Image>
+                </Button>
             </ToolBar>
         </ToolBarTray>
         <StatusBar Height="35" Background="LightGray" DockPanel.Dock="Bottom">
@@ -51,7 +58,7 @@
                 <Label x:Name="ColorLabel" Content="色彩" FontSize="14" VerticalAlignment="Center"/>
             </StatusBarItem>
         </StatusBar>
-        <Canvas Background="#FFF5f5E7"/>
+        <Canvas x:Name="MyCanvas" Background="#FFF5f5E7" MouseEnter="MyCanvas_MouseEnter" MouseLeftButtonDown="MyCanvas_MouseLeftButtonDown" MouseMove="MyCanvas_MouseMove" MouseLeftButtonUp="MyCanvas_MouseLeftButtonUp"/>
 
     </DockPanel>
 </Window>

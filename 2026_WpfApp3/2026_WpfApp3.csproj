@@ -11,9 +11,11 @@
 
   <ItemGroup>
     <None Remove="ellipse.png" />
+    <None Remove="eraser.png" />
     <None Remove="line.png" />
     <None Remove="polyline.png" />
     <None Remove="rectangle.png" />
+    <None Remove="trashcan.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,11 +26,17 @@
     <Resource Include="ellipse.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="eraser.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="line.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="polyline.png" />
     <Resource Include="rectangle.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="trashcan.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
